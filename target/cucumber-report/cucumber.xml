@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.215066">
+<testcase classname="Login Feature" name="1 Login with registered user" time="0.201704">
+<system-out><![CDATA[Given that I open the home screen...........................................passed
+When I type valid credentials to LogIn Screen...............................passed
+Then I should be redirected to home screen..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="2 Login with unregisterd user" time="0.013362">
+<system-out><![CDATA[Given that I open the home screen...........................................passed
+When I login with invalid himanshu1@gmail.com and DoesntworkInt1 credentials.passed
+Then I should see the error message "Invalid email or password".............passed
+]]></system-out>
+</testcase>
+</testsuite>

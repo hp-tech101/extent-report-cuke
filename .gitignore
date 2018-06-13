@@ -1,0 +1,5 @@
+target/generated-test-sources
+target/generated-test-sources/*
+target/test-classes
+target/test-classes/*
+*.class

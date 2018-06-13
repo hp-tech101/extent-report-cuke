@@ -1,0 +1,185 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Navigate to Login Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 184540431,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "that I open the home screen",
+            "match": {
+              "location": "StepDefs.that_i_open_the_home_screen()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "1 Login with registered user",
+        "description": "",
+        "id": "login-feature;1-login-with-registered-user",
+        "after": [
+          {
+            "result": {
+              "duration": 419739,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2483422,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I type valid credentials to LogIn Screen",
+            "match": {
+              "location": "StepDefs.i_type_valid_credentials_to_login_screen(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "himanshu.tech101@gmail.com",
+                  "Eminence17$$18"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187077,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should be redirected to home screen",
+            "match": {
+              "location": "StepDefs.i_should_be_redirected_to_home_screen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Navigate to Login Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 189994,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "that I open the home screen",
+            "match": {
+              "location": "StepDefs.that_i_open_the_home_screen()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "2 Login with unregisterd user",
+        "description": "",
+        "id": "login-feature;2-login-with-unregisterd-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 263658,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9350573,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I login with invalid himanshu1@gmail.com and DoesntworkInt1 credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "himanshu1@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "DoesntworkInt1",
+                  "offset": 45
+                }
+              ],
+              "location": "StepDefs.i_login_with_invalid_and_credentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 262929,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should see the error message \"Invalid email or password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid email or password",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefs.i_should_see_the_error_message_something(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@InvalidLogin"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "  As a Fitbit app user\n  I would like to be able to login with my secure username and password\n  So I can use the fitbit app to my liking",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/feat01-login.feature",
+    "tags": []
+  }
+]
